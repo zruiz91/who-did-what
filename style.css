@@ -36,3 +36,37 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}

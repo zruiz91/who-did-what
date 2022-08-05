@@ -47,13 +47,20 @@ body {
 }
 
 .side {
-    flex: 30%;
+    flex: 20%;
     background-color: #f1f1f1;
     padding: 20px;
 }
+.side h3 {
+    font-size: smaller;
+}
+
+.side h4 {
+    font-size: smaller;
+}
 
 .main {
-    flex: 70%;
+    flex: 80%;
     background-color: white;
     padding: 20px;
 }

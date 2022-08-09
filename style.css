@@ -69,11 +69,12 @@ body {
 @media screen and (max-width: 700px) {
     .row {
         flex-direction: column;
+
     }
 }
 
 @media screen and (max-width: 400px) {
-    .navbar a {
+    .topNav a {
         float: none;
         width: 100%;
     }
@@ -88,3 +89,4 @@ body {
  #more {
     display: none;
  }
+

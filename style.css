@@ -90,3 +90,14 @@ body {
     display: none;
  }
 
+ .slideshowButton {
+    background-color: white;
+ }
+
+ .slides {
+    display: none;
+ }
+
+ a {
+    text-decoration: none;
+ }

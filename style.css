@@ -101,3 +101,15 @@ body {
  a {
     text-decoration: none;
  }
+
+ table {
+    padding: 100px;
+ }
+
+th {
+    padding: 50px;
+}
+
+td {
+    padding: 50px;
+}

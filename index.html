@@ -15,16 +15,16 @@
             <a class="right" href="/Users/zachruiz/Development/code/who-did-what/food.html" target="">the kitchen</a>
             <a class="right" href="/Users/zachruiz/Development/code/who-did-what/sports.html" target="">sports</a>
         </div>
-        <section>
-            <img src="/Users/zachruiz/Development/code/who-did-what/BuffaloBayou.jpg" class="slides" alt="" width="100%" />
+        <div class="header">
+            <h1>WhoWhatWhere</h1>
+            <p>we've got good news</p>    
+        </div>
+        <div>
+            <img src="/Users/zachruiz/Development/code/who-did-what/BuffaloBayou.jpg" class="slides" alt="" width="100%" height="400px" />
             <img src="/Users/zachruiz/Development/code/who-did-what/houstonMetro.jpg" class="slides" alt="" width="100%" /> 
             <img src="/Users/zachruiz/Development/code/who-did-what/houstonNight.jpg" class="slides" alt="" width="100%" />
             <button class="slideshowButton slideshowLeft" onclick="plusDivs(-1)">&#10094;</button> 
             <button class="slideshowButton slideshowRight" onclick="plusDivs(+1)">&#10095;</button> 
-        </section>
-       <div class="header">
-            <h1>WhoWhatWhere</h1>
-            <p>we've got good news</p>    
         </div>
         <div class="row">
             <div class="side">
@@ -65,6 +65,25 @@
             <p id="date"></p>
         </div>
         <script>alert("You are now entering the woderful world of news!")</script>
+        <script>
+            const slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                let i;
+                const x = document.getElementsByClassName("slides");
+                if (n > x.length) {slideIndex = 1};
+                if (n < 1) {slideIndex = x.length};
+                for(i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
         <script src="script.js"></script>
     </body>
 </html>

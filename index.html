@@ -7,6 +7,7 @@
         <title>WhoWhatWhere</title>
     </head>
     <body>
+        <!--nav links-->
         <div class="topNav">
             <a href="/Users/zachruiz/Development/code/who-did-what/index.html" target="">home</a>
             <a href="/Users/zachruiz/Development/code/who-did-what/local.html" target="">the neighborhood</a>
@@ -15,10 +16,12 @@
             <a class="right" href="/Users/zachruiz/Development/code/who-did-what/food.html" target="">the kitchen</a>
             <a class="right" href="/Users/zachruiz/Development/code/who-did-what/sports.html" target="">sports</a>
         </div>
+        <!--header-->
         <div class="header">
             <h1>WhoWhatWhere</h1>
             <p>we've got good news</p>    
         </div>
+        <!--    !!! slideshow images, yet to be succesfully implemented, see bottom of page for accompanying code !!!
         <div>
             <img src="/Users/zachruiz/Development/code/who-did-what/BuffaloBayou.jpg" class="slides" alt="" width="100%" height="400px" />
             <img src="/Users/zachruiz/Development/code/who-did-what/houstonMetro.jpg" class="slides" alt="" width="100%" /> 
@@ -26,7 +29,9 @@
             <button class="slideshowButton slideshowLeft" onclick="plusDivs(-1)">&#10094;</button> 
             <button class="slideshowButton slideshowRight" onclick="plusDivs(+1)">&#10095;</button> 
         </div>
+        -->
         <div class="row">
+            <!--side stories-->
             <div class="side">
                 <div>
                     <hr/>
@@ -49,6 +54,7 @@
                 </div>        
             </div>
             <div class="main">
+                <!--main story-->
                 <div>
                     <h2>Evion Spring becomes youngest Golden Retriever to hold public office.</h2>
                     <img src="/Users/zachruiz/Development/code/who-did-what/goldenret.jpg" alt="Golden Retriever" />
@@ -60,11 +66,14 @@
             </div>   
             </div>
         </div>
+        <!--footer-->
         <div class="footer">
             <h2>footerfooter</h2>
             <p id="date"></p>
         </div>
+        <!--script to show an alert when you arrive at page-->
         <script>alert("You are now entering the woderful world of news!")</script>
+        <!--      !!! script to make a slideshow at the top !!!
         <script>
             const slideIndex = 1;
             showDivs(slideIndex);
@@ -84,6 +93,7 @@
                 x[slideIndex - 1].style.display = "block";
             }
         </script>
+        -->
         <script src="script.js"></script>
     </body>
 </html>
